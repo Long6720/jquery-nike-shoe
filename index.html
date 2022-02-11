@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Nike</title>
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- End Swiper -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="grid__container">
+      <!-- Header -->
+      <header>
+        <div class="header__menu fas fa-bars" id="menu-bar"></div>
+        <div class="header__mobile-container">
+          <div class="header__mobile">
+            <div class="header__mobile-logo">
+              <a href="#" class="header__mobile-logo-link"
+                ><img
+                  src="./images/logo.png"
+                  alt="Nike"
+                  class="header__mobile-logo-image"
+              /></a>
+            </div>
+            <nav class="header__navbar-mobile">
+              <ul class="header__navbar-mobile-list">
+                <li class="header__navbar-mobile-item">
+                  <a href="#men" class="header__navbar-mobile-link" alt="Men"
+                    >men</a
+                  >
+                </li>
+                <li class="header__navbar-mobile-item">
+                  <a
+                    href="#women"
+                    class="header__navbar-mobile-link"
+                    alt="Women"
+                    >women</a
+                  >
+                </li>
+                <li class="header__navbar-mobile-item">
+                  <a href="#kids" class="header__navbar-mobile-link" alt="Kids"
+                    >kids</a
+                  >
+                </li>
+                <li class="header__navbar-mobile-item">
+                  <a
+                    href="#customize"
+                    class="header__navbar-mobile-link"
+                    alt="Customize"
+                    >customize</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="header__mobile-contact">
+              <h3 class="header__contact-heading">contact us:</h3>
+              <div class="header__contact-icons">
+                <a href="" class="header__contact-icons-link"
+                  ><i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="" class="header__contact-icons-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="" class="header__contact-icons-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="header__mobile-icon fas fa-times" id="close-bar"></div>
+        </div>
+        <div class="header__logo">
+          <a href="" class="header__logo-link"
+            ><img src="./images/logo.png" alt="" class="header__logo-image"
+          /></a>
+        </div>
+        <nav class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item">
+              <a href="#men" class="header__navbar-link" alt="Men">men</a>
+            </li>
+            <li class="header__navbar-item">
+              <a href="#women" class="header__navbar-link" alt="Women">women</a>
+            </li>
+            <li class="header__navbar-item">
+              <a href="#kids" class="header__navbar-link" alt="Kids">kids</a>
+            </li>
+            <li class="header__navbar-item">
+              <a href="#customize" class="header__navbar-link" alt="Customize"
+                >customize</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header__icons">
+          <a href="" class="header__icons-link"
+            ><ion-icon class="header__icon" name="search-outline"></ion-icon
+          ></a>
+          <a href="" class="header__icons-link"
+            ><ion-icon class="header__icon" name="heart-outline"></ion-icon
+          ></a>
+          <a href="" class="header__icons-link header__icons-link--cart">
+            <ion-icon class="header__icon" name="cart-outline"></ion-icon>
+            <div class="header__cart--has-product"></div>
+            <div class="header__cart-items"><span>Bag items: </span>100000</div>
+          </a>
+          <button class="header__icons-btn btn-primary" alt="Sign In">
+            sign in
+          </button>
+        </div>
+      </header>
+      <!-- Main -->
+      <section class="main">
+        <div class="main__slider">
+          <div class="main__slider-container active">
+            <div class="main__slide">
+              <div class="main__slide-info">
+                <h3 class="main__slide-heading font-family">
+                  spring collections <span>2022</span>
+                </h3>
+                <div class="main__slide-info-text">
+                  <p class="main__slide-info-text-introduction">
+                    The styles of shoe available to consumers are endless and
+                    profit also endless
+                  </p>
+                  <button class="main__slide-info-text-btn btn-primary">
+                    shop now<ion-icon
+                      name="arrow-forward-circle-sharp"
+                      class="btn-primary-icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="main__slide-image">
+                <img
+                  src="./images/lebron-ix-1.png"
+                  alt="background 1"
+                  class="main__slide-image-shoe"
+                />
+                <div class="main__slide-image-discount">
+                  <div class="main__slide-image-discount-text">
+                    <h3>Get up to 30% off</h3>
+                    <p>You can get up to 30 percent discount from here</p>
+                  </div>
+                  <div class="main__slide-image-discount--before"></div>
+                  <div class="main__slide-image-discount--after"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__slider-container">
+            <div class="main__slide">
+              <div class="main__slide-info">
+                <h3 class="main__slide-heading font-family">
+                  summer collections <span>2022</span>
+                </h3>
+                <div class="main__slide-info-text">
+                  <p class="main__slide-info-text-introduction">
+                    The styles of shoe available to consumers are endless and
+                    profit also endless
+                  </p>
+                  <button class="main__slide-info-text-btn btn-primary">
+                    shop now<ion-icon
+                      name="arrow-forward-circle-sharp"
+                      class="btn-primary-icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="main__slide-image">
+                <img
+                  src="./images/dunk-high-up-1.png"
+                  alt="background 1"
+                  class="main__slide-image-shoe"
+                />
+                <div class="main__slide-image-discount">
+                  <div class="main__slide-image-discount-text">
+                    <h3>Get up to 30% off</h3>
+                    <p>You can get up to 30 percent discount from here</p>
+                  </div>
+                  <div class="main__slide-image-discount--before"></div>
+                  <div class="main__slide-image-discount--after"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__slider-container">
+            <div class="main__slide">
+              <div class="main__slide-info">
+                <h3 class="main__slide-heading font-family">
+                  autumn collections <span>2022</span>
+                </h3>
+                <div class="main__slide-info-text">
+                  <p class="main__slide-info-text-introduction">
+                    The styles of shoe available to consumers are endless and
+                    profit also endless
+                  </p>
+                  <button class="main__slide-info-text-btn btn-primary">
+                    shop now<ion-icon
+                      name="arrow-forward-circle-sharp"
+                      class="btn-primary-icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="main__slide-image">
+                <img
+                  src="./images/custom-nike-air-max-95-1.png"
+                  alt="background 1"
+                  class="main__slide-image-shoe"
+                />
+                <div class="main__slide-image-discount">
+                  <div class="main__slide-image-discount-text">
+                    <h3>Get up to 30% off</h3>
+                    <p>You can get up to 30 percent discount from here</p>
+                  </div>
+                  <div class="main__slide-image-discount--before"></div>
+                  <div class="main__slide-image-discount--after"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fas fa-chevron-left" id="prev"></div>
+          <div class="fas fa-chevron-right" id="next"></div>
+          <div class="main__slider-bottom">
+            <p class="main__slider-bottom-introduction">
+              The styles of shoe available to consumers are endless and
+              profit also endless
+            </p>
+            <button class="main__slider-bottom-btn btn-primary">
+              shop now<ion-icon
+                name="arrow-forward-circle-sharp"
+                class="btn-primary-icon"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="swiper main__popular">
+          <div class="main__popular-content">
+            <h3 class="main__popular-content-heading">
+              Popular <span>Products</span>
+            </h3>
+            <div class="main__product-content-action">
+              <button
+                class="swiper-button-prev main__product-content-action-btn"
+              >
+                <ion-icon
+                  name="arrow-back"
+                  class="main__product-content-action-icon"
+                ></ion-icon>
+              </button>
+              <button
+                class="swiper-button-next main__product-content-action-btn"
+              >
+                <ion-icon
+                  name="arrow-forward"
+                  class="main__product-content-action-icon"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-wrapper main__popular-products">
+            <div class="swiper-slide main__popular-products-item">
+              <div class="main__popular-products-top">
+                <img
+                  src="./img_products/Men/air-force-1-07-3.png"
+                  alt=""
+                  class="main__popular-products-image"
+                />
+                <div class="main__popular-products-heart">
+                  <ion-icon
+                    class="main__popular-products-heart-icon"
+                    name="heart-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <div class="main__popular-products-bottom">
+                <div class="main__popular-products-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <div class="main__popular-products-rating-number">(4.5)</div>
+                </div>
+                <div class="main__popular-products-name">
+                  nike air force 1 07'
+                </div>
+                <div class="main__popular-products-price">
+                  <div class="main__popular-products-price-current">$30.20</div>
+                  <div class="main__popular-products-price-old">$35.20</div>
+                </div>
+                <button class="main__popular-products-btn btn-add">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide main__popular-products-item">
+              <div class="main__popular-products-top">
+                <img
+                  src="./img_products/Men/air-force-1-07-lv8-3.png"
+                  alt=""
+                  class="main__popular-products-image"
+                />
+                <div class="main__popular-products-heart">
+                  <ion-icon
+                    class="main__popular-products-heart-icon"
+                    name="heart-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <div class="main__popular-products-bottom">
+                <div class="main__popular-products-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <div class="main__popular-products-rating-number">(5.0)</div>
+                </div>
+                <div class="main__popular-products-name">
+                  nike air force 1 07' lv8
+                </div>
+                <div class="main__popular-products-price">
+                  <div class="main__popular-products-price-current">$34.30</div>
+                  <div class="main__popular-products-price-old">$44.30</div>
+                </div>
+                <button class="main__popular-products-btn btn-add">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide main__popular-products-item">
+              <div class="main__popular-products-top">
+                <img
+                  src="./img_products/Men/air-jordan-4-crimson-3.png"
+                  alt=""
+                  class="main__popular-products-image"
+                />
+                <div class="main__popular-products-heart">
+                  <ion-icon
+                    class="main__popular-products-heart-icon"
+                    name="heart-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <div class="main__popular-products-bottom">
+                <div class="main__popular-products-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <div class="main__popular-products-rating-number">(4.5)</div>
+                </div>
+                <div class="main__popular-products-name">
+                  nike air jordan-4-crimson
+                </div>
+                <div class="main__popular-products-price">
+                  <div class="main__popular-products-price-current">$40.20</div>
+                  <div class="main__popular-products-price-old">$45.20</div>
+                </div>
+                <button class="main__popular-products-btn btn-add">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide main__popular-products-item">
+              <div class="main__popular-products-top">
+                <img
+                  src="./img_products/Men/jordan-ma2-3.png"
+                  alt=""
+                  class="main__popular-products-image"
+                />
+                <div class="main__popular-products-heart">
+                  <ion-icon
+                    class="main__popular-products-heart-icon"
+                    name="heart-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <div class="main__popular-products-bottom">
+                <div class="main__popular-products-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <div class="main__popular-products-rating-number">(4.5)</div>
+                </div>
+                <div class="main__popular-products-name">jordan MA2</div>
+                <div class="main__popular-products-price">
+                  <div class="main__popular-products-price-current">$40.50</div>
+                  <div class="main__popular-products-price-old">$46.40</div>
+                </div>
+                <button class="main__popular-products-btn btn-add">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide main__popular-products-item">
+              <div class="main__popular-products-top">
+                <img
+                  src="./img_products/Men/jordan-zoom-3.png"
+                  alt=""
+                  class="main__popular-products-image"
+                />
+                <div class="main__popular-products-heart">
+                  <ion-icon
+                    class="main__popular-products-heart-icon"
+                    name="heart-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <div class="main__popular-products-bottom">
+                <div class="main__popular-products-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <div class="main__popular-products-rating-number">(4.5)</div>
+                </div>
+                <div class="main__popular-products-name">jordan zoom</div>
+                <div class="main__popular-products-price">
+                  <div class="main__popular-products-price-current">$20.20</div>
+                  <div class="main__popular-products-price-old">$25.20</div>
+                </div>
+                <button class="main__popular-products-btn btn-add">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide main__popular-products-item">
+              <div class="main__popular-products-top">
+                <img
+                  src="./img_products/Men/lebron-ix-3.png"
+                  alt=""
+                  class="main__popular-products-image"
+                />
+                <div class="main__popular-products-heart">
+                  <ion-icon
+                    class="main__popular-products-heart-icon"
+                    name="heart-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <div class="main__popular-products-bottom">
+                <div class="main__popular-products-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <div class="main__popular-products-rating-number">(4.5)</div>
+                </div>
+                <div class="main__popular-products-name">nike LeBron IX</div>
+                <div class="main__popular-products-price">
+                  <div class="main__popular-products-price-current">$20.20</div>
+                  <div class="main__popular-products-price-old">$25.20</div>
+                </div>
+                <button class="main__popular-products-btn btn-add">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__about">
+          <div class="main__about-box">
+            <div class="main__about-box-info">
+              <img
+                src="./images/custom-nike-air-force-97-3.png"
+                alt="name"
+                class="main__about-box-info-image"
+              />
+              <div class="main__about-box-info-discount">
+                <div class="main__about-box-info-discount-text">
+                  <h3>Get up to 30% off</h3>
+                  <p>You can get up to 30 percent discount from here</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__about-content">
+            <h5 class="main__about-content-title">about us</h5>
+            <h2 class="main__about-content-heading">
+              we provide <span>high</span> quality shoes.
+            </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequatur perferendis saepe quibusdam et aspernatur soluta, ad,
+              sint impedit ut nulla ab porro laboriosam maiores.
+            </p>
+            <p>Laudantium obcaecati aliquid voluptatem mollitia excepturi.</p>
+            <button class="main__about-content-btn btn-primary">
+              explore more<ion-icon
+                name="arrow-forward-circle-sharp"
+                class="btn-primary-icon"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="main__details">
+          <div class="main__details-content">
+            <h5 class="main__details-content-title">product details</h5>
+            <h3 class="main__details-content-heading">
+              Get to Know Our Feature <span>Product</span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              impedit ab consequuntur rerum vitae inventore, ad quo tenetur
+              ducimus labore beatae ea odit sequi sint, delectus fuga voluptate
+              quaerat odio!
+            </p>
+            <ul class="main__details-content-list">
+              <li class="main__details-content-item">
+                <div class="main__details-content-evaluate">
+                  <ion-icon
+                    name="shield-checkmark-sharp"
+                    class="main__details-content-evaluate-icon"
+                  ></ion-icon>
+                </div>
+                <div class="main__details-content-best">
+                  <h4>best quality shoes</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati, tempore quia necessitatibus laboriosam cumque.
+                  </p>
+                </div>
+              </li>
+              <li class="main__details-content-item">
+                <div class="main__details-content-evaluate">
+                  <ion-icon
+                    name="pricetag"
+                    class="main__details-content-evaluate-icon"
+                  ></ion-icon>
+                </div>
+                <div class="main__details-content-best">
+                  <h4>best giving pricing</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati, tempore quia necessitatibus laboriosam cumque.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="main__details-box">
+            <div class="main__details-box-info">
+              <img
+                src="./images/nike-box.png"
+                alt=""
+                class="main__details-box-info-image"
+              />
+            </div>
+            <div class="main__details-box-content">
+              <h3 class="main__details-box-content-name">
+                nike watch series 7'
+              </h3>
+              <div class="main__details-box-content-bottom">
+                <div class="main__details-box-content-price">
+                  <div class="main__details-box-content-price-current">
+                    $30.20
+                  </div>
+                  <div class="main__details-box-content-price-old">$50.20</div>
+                </div>
+                <button class="main__details-box-content-btn">
+                  <i
+                    class="fas fa-cart-plus main__details-box-content-btn-icon"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="customer">
+        <div class="swiper customer__content">
+          <div class="customer__top">
+            <div class="customer__title">
+              what our <span>customer says</span>
+            </div>
+            <div class="customer__action">
+              <button class="swiper-button-prev customer__action-btn">
+                <ion-icon
+                  name="arrow-back"
+                  class="customer__action-icon"
+                ></ion-icon>
+              </button>
+              <button class="swiper-button-next customer__action-btn">
+                <ion-icon
+                  name="arrow-forward"
+                  class="customer__action-icon"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-wrapper customer__bottom">
+            <div class="swiper-slide customer__slide">
+              <img
+                src="./images/person1.png"
+                alt=""
+                class="customer__slide-img"
+              />
+              <p class="customer__slide-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+                assumenda accusantium, officiis eaque asperiores commodi
+                dignissimos repellat. Alias dolore sed provident ratione, minus,
+                reiciendis minima amet hic dignissimos nulla ullam!
+              </p>
+              <div class="customer__slide-evaluate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <h3 class="customer__slide-name">Remington</h3>
+            </div>
+            <div class="swiper-slide customer__slide">
+              <img
+                src="./images/person3.png"
+                alt=""
+                class="customer__slide-img"
+              />
+              <p class="customer__slide-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+                assumenda accusantium, officiis eaque asperiores commodi
+                dignissimos repellat. Alias dolore sed provident ratione, minus,
+                reiciendis minima amet hic dignissimos nulla ullam!
+              </p>
+              <div class="customer__slide-evaluate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <h3 class="customer__slide-name">Remington</h3>
+            </div>
+            <div class="swiper-slide customer__slide">
+              <img
+                src="./images/person2.png"
+                alt=""
+                class="customer__slide-img"
+              />
+              <p class="customer__slide-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+                assumenda accusantium, officiis eaque asperiores commodi
+                dignissimos repellat. Alias dolore sed provident ratione, minus,
+                reiciendis minima amet hic dignissimos nulla ullam!
+              </p>
+              <div class="customer__slide-evaluate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <h3 class="customer__slide-name">Remington</h3>
+            </div>
+            <div class="swiper-slide customer__slide">
+              <img
+                src="./images/person7.png"
+                alt=""
+                class="customer__slide-img"
+              />
+              <p class="customer__slide-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+                assumenda accusantium, officiis eaque asperiores commodi
+                dignissimos repellat. Alias dolore sed provident ratione, minus,
+                reiciendis minima amet hic dignissimos nulla ullam!
+              </p>
+              <div class="customer__slide-evaluate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <h3 class="customer__slide-name">Remington</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <div class="footer">
+        <section class="footer__mail">
+          <div class="footer__mail-info">
+            <div class="footer__mail-info-heading">
+              sign up for <span>updates</span> & newsletter
+            </div>
+          </div>
+          <div class="footer__mail-box">
+            <input
+              type="email"
+              class="footer__mail-box-input"
+              placeholder="Type Your Email"
+            />
+            <button class="footer__mail-box-btn btn-primary">
+              subscribe now
+            </button>
+          </div>
+        </section>
+        <section class="footer__info">
+          <div class="footer__content">
+            <div class="footer__logo">
+              <a href="#" class="footer__logo-link"
+                ><img src="./images/logo.png" alt="" class="footer__logo-image"
+              /></a>
+              <div class="footer__logo-heading">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="footer__logo-icons">
+                <a href="" class="footer__logo-icons-link"
+                  ><i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="" class="footer__logo-icons-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="" class="footer__logo-icons-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+            <div class="footer__find">
+              <div class="footer__heading">find product</div>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#men" class="footer__link">men</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#women" class="footer__link">women</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#kids" class="footer__link">kids</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#customize" class="footer__link">customize</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__help">
+              <div class="footer__heading">get help</div>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#about" class="footer__link">about us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#contact" class="footer__link">contact us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">return policy</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">private policy</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">payment policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__about">
+              <div class="footer__heading">about us</div>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#news" class="footer__link">news</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#service" class="footer__link">service</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">our policy</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">customer care</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">faq's</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="footer__rights">
+          <span>© 2022 Ryu. All Rights Reserved</span>
+        </section>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
