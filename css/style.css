@@ -1300,12 +1300,13 @@ header.box-shadow {
   }
   .footer__mail {
     padding-top: 6rem;
+    justify-content: center;
   }
   .footer__mail-info {
     width: 100%;
   }
   .footer__mail-info-heading {
-    font-size: 2.9rem;
+    font-size: 2.3rem;
     margin-bottom: 1.2rem;
   }
   .footer__mail-box-input {
